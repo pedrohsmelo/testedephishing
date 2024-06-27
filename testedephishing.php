@@ -27,7 +27,7 @@ if (!file_exists($filename)) {
 
 $counter = file_get_contents($filename);
 
-// Incrementa o contador somente se não for uma visita recente
+// Incrementa o contador se não for uma visita recente
 if (!$recentVisit) {
     $counter++;
     file_put_contents($filename, $counter);
