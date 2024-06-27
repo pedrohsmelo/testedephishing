@@ -40,6 +40,7 @@ if (!$recentVisit) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Phishing</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f480.png">
     <style>
         body {
             display: flex;
