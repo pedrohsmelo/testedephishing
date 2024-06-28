@@ -27,7 +27,7 @@ if (!file_exists($filename)) {
 
 $counter = file_get_contents($filename);
 
-// Incrementa o contador se não for uma visita recente
+// Incrementa o contador apenas se não for uma visita recente
 if (!$recentVisit) {
     $counter++;
     file_put_contents($filename, $counter);
@@ -41,6 +41,7 @@ if (!$recentVisit) {
     <title>Teste de Phishing</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f480.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -54,6 +55,7 @@ if (!$recentVisit) {
             font-size: 3rem;
             text-align: center;
             text-shadow: 1px 1px 2px #000;
+            position: relative; /* Adicione esta linha */
         }
         .message {
             border: 5px solid #16cc16;
@@ -63,6 +65,14 @@ if (!$recentVisit) {
         }
         .bold {
             font-weight: bold;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1rem;
+            color: #16cc16;
         }
     </style>
 </head>
@@ -80,6 +90,7 @@ if (!$recentVisit) {
             </div>
         </div>
     </div>
+    <div class="footer">by Cyber Rasta</div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
