@@ -55,7 +55,7 @@ if (!$recentVisit) {
             font-size: 3rem;
             text-align: center;
             text-shadow: 1px 1px 2px #000;
-            position: relative; /* Adicione esta linha */
+            position: relative; 
         }
         .message {
             border: 5px solid #16cc16;
